@@ -1,0 +1,70 @@
+HELP.md
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.DS_Store
+*.class
+*.jar
+*.dat
+.gradle/
+.idea/
+.classpath
+.project
+.settings/
+!*Settings.java
+.vscode/
+out/
+build/
+bin/
+*.iml
+.terraform/
+terraform.tfstate.backup
+terraform.tfstate.d/
+node_modules/
+dist/
+infrastructure/temp/
+config/
+infrastructure/gremlin-server/libs/
+.DS_Store
+*.log
+admin-api/target/*
+calculation-api/target/*
+/ingestion-api/target/*
+shared-components/target/*
+/integration-test/target/*
+/target/*
+~*
+ingestion-api/FTPwk01v2.xlsx
+/*FTP*.xlsx
+# ignore new downloaded graph files
+/*.graphml
+
+#ignore surefire reports
+.surefire-*
+
+.mvn/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+
+### VS Code ###
+.vscode/
