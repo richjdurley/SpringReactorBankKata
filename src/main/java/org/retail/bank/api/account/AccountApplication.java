@@ -7,7 +7,7 @@ import org.springframework.web.reactive.config.EnableWebFlux;
 
 @SpringBootApplication
 @EnableWebFlux
-@ComponentScan(basePackages = {"org.tesco.bank.api.account"})
+@ComponentScan(basePackages = {"org.retail.bank.api.account"})
 public class AccountApplication {
 
 	public static void main(String[] args) {
