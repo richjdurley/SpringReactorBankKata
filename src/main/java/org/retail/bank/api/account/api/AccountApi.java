@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.server.RequestPredicates;
 import org.springframework.web.reactive.function.server.RouterFunction;
-import org.retail.bank.api.account.api.handlers.*;
 
 import static org.springframework.http.MediaType.ALL;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
@@ -37,8 +36,8 @@ public class AccountApi {
                                 route(RequestPredicates.POST("/account/create").and(RequestPredicates.accept(APPLICATION_JSON).and(contentType(APPLICATION_JSON))),
                                         request -> this.accountHandler.createAccount(request)))
                         .and(
-                                route(RequestPredicates.GET("/account/{id}/statement").and(RequestPredicates.accept(APPLICATION_JSON).and(contentType(APPLICATION_JSON))),
-                                        request -> this.accountHandler.getStatement(request)))
+                                route(RequestPredicates.GET("/account/{id}").and(RequestPredicates.accept(APPLICATION_JSON).and(contentType(APPLICATION_JSON))),
+                                        request -> this.accountHandler.getAccount(request)))
                         .and(
                                 route(RequestPredicates.POST("/account/{id}/deposit").and(RequestPredicates.accept(APPLICATION_JSON).and(contentType(APPLICATION_JSON))),
                                         request -> this.accountHandler.doDeposit(request)))

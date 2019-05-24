@@ -36,7 +36,7 @@ public class AccountHandler {
                 onErrorResume(e -> errorHandler.handleError(e));
     }
 
-    public Mono<ServerResponse> getStatement(ServerRequest request) {
+    public Mono<ServerResponse> getAccount(ServerRequest request) {
         return null;
     }
 
